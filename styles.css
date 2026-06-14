@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ANIMATION */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  min-height: 100vh;
+  background-color: #24140b;
+  background-image: radial-gradient(ellipse at top, #3a1f10 0%, #120905 100%);
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.menu {
+  background-color: #fff7ef;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 14px;
+  padding: 40px 36px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6);
+  border-top: 6px solid #6b3b1a;
+
+  /* FADE-IN */
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo-icon {
+  font-size: 38px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  letter-spacing: 4px;
+  color: #2f160a;
+  text-transform: uppercase;
+}
+
+.established {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: #a06a3c;
+  font-size: 14px;
+}
+
+/* DIVIDER */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.divider hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #d1a27a;
+}
+
+.divider span {
+  color: #6b3b1a;
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 24px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.section-header img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #d1a27a;
+}
+
+/* ITEMS */
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* HOVER GLOW EFFECT */
+.item:hover {
+  background-color: #f3e1d2;
+  transform: translateX(4px);
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.2);
+}
+
+.flavor,
+.dessert {
+  color: #2f160a;
+}
+
+.item-dots {
+  flex: 1;
+  border-bottom: 1px dotted #d1a27a;
+  margin: 0 10px;
+}
+
+.price {
+  color: #7a3b10;
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #a06a3c;
+}
+
+footer a {
+  color: #6b3b1a;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* TAGLINE */
+.tagline {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 12px;
+  color: #b07a4a;
+  text-align: center;
+  margin-top: 16px;
+}
